@@ -1,4 +1,4 @@
-# akt_application_1
+# akt_application
 
 A new Flutter project.
 
