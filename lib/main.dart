@@ -1,6 +1,9 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'widgets/myflexiableappbar.dart';
 import 'widgets/myappbar.dart';
+import 'widgets/mysliverlist.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,19 +36,24 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+        backgroundColor: Colors.black,
         body: CustomScrollView(
-      slivers: <Widget>[
-        SliverAppBar(
-          backgroundColor: Colors.black,
-          title: MyAppBar(),
-          pinned: true,
-          expandedHeight: 210.0,
-          flexibleSpace: FlexibleSpaceBar(
-            background: MyFlexiableAppBar(),
-          ),
-        ),
-      ],
-    ));
+          slivers: const <Widget>[
+            SliverAppBar(
+              backgroundColor: Colors.black,
+              title: MyAppBar(),
+              pinned: true,
+              expandedHeight: 300.0,
+              flexibleSpace: FlexibleSpaceBar(
+                background: MyFlexiableAppBar(),
+              ),
+            ),
+            MySliverList(),
+            MySliverList(),
+            MySliverList(),
+            MySliverList(),
+          ],
+        ));
   }
 }

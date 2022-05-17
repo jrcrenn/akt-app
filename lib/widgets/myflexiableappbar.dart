@@ -2,17 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyFlexiableAppBar extends StatelessWidget {
-  final double appBarHeight = 66.0;
-
   const MyFlexiableAppBar();
 
   @override
   Widget build(BuildContext context) {
-    final double statusBarHeight = MediaQuery.of(context).padding.top;
-
     return Container(
-      padding: EdgeInsets.only(top: statusBarHeight),
-      height: statusBarHeight + appBarHeight,
       child: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -36,8 +30,8 @@ class MyFlexiableAppBar extends StatelessWidget {
               Directionality(
                   textDirection: TextDirection.rtl,
                   child: ElevatedButton.icon(
-                    label: Text('Learn More'),
-                    icon: Icon(Icons.arrow_left),
+                    label: const Text('Learn More'),
+                    icon: const Icon(Icons.arrow_left),
                     onPressed: () async {
                       const url = 'https://www.akt.io/';
                       if (await canLaunch(url)) launch(url);
@@ -49,8 +43,8 @@ class MyFlexiableAppBar extends StatelessWidget {
       )),
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("images/image.png"),
-          fit: BoxFit.cover,
+          image: AssetImage("images/image2.png"),
+          fit: BoxFit.fill,
         ),
       ),
     );
