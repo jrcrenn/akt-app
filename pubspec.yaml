@@ -63,15 +63,6 @@ flutter:
   assets:
     - images/image.png
     - images/image2.png
-    - images/bitcoin.png
-    - images/bitshares.png
-    - images/counterparty.png
-    - images/ethereum.png
-    - images/litecoin.png
-    - images/lykke.png
-    - images/peercoin.png
-    - images/singular.png
-    - images/zcash.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
