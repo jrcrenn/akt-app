@@ -9,7 +9,7 @@ class MySliverList extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: SizedBox(
-          height: 130.0,
+          height: 139.0,
           child: ListView.builder(
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
