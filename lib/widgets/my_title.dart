@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+
+class MyTitle extends StatelessWidget {
+  final double barHeight = 66.0;
+
+  const MyTitle();
+
+  @override
+  Widget build(BuildContext context) {
+    return SliverToBoxAdapter(
+        child: Padding(
+      padding: EdgeInsets.only(left: 5),
+      child: Text(
+        'Cryptos',
+        style: TextStyle(
+            color: Colors.grey,
+            fontFamily: 'Poppins',
+            fontSize: 10.0,
+            fontWeight: FontWeight.bold),
+      ),
+    ));
+  }
+}
