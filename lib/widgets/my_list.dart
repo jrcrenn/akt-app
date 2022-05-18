@@ -37,6 +37,7 @@ class MyList extends StatelessWidget {
                                 coinList[index].symbol.toUpperCase(),
                                 style: const TextStyle(
                                     color: Colors.white,
+                                    fontFamily: 'Poppins',
                                     fontSize: 10.0,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -48,6 +49,7 @@ class MyList extends StatelessWidget {
                                     ' \$',
                                 style: const TextStyle(
                                     color: Colors.white,
+                                    fontFamily: 'Poppins',
                                     fontSize: 8.0,
                                     fontWeight: FontWeight.bold),
                               ),
@@ -75,6 +77,7 @@ class MyList extends StatelessWidget {
                                             0
                                         ? Colors.red
                                         : Colors.green,
+                                    fontFamily: 'Poppins',
                                     fontSize: 8.0,
                                     fontWeight: FontWeight.bold,
                                   ))
