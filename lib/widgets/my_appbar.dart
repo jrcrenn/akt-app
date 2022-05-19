@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget {
-  final double barHeight = 66.0;
-
   const MyAppBar();
+
+  final double barHeight = 66.0;
 
   @override
   Widget build(BuildContext context) {

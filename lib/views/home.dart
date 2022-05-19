@@ -19,6 +19,12 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  @override
+  void initState() {
+    fetchCoin();
+    super.initState();
+  }
+
   Future<List<Coin>> fetchCoin() async {
     coinList = [];
     final response = await http.get(Uri.parse(AppConfigurations.apiUrl));
@@ -39,12 +45,6 @@ class _HomeState extends State<Home> {
     } else {
       throw Exception('Failed to load coins');
     }
-  }
-
-  @override
-  void initState() {
-    fetchCoin();
-    super.initState();
   }
 
   @override
